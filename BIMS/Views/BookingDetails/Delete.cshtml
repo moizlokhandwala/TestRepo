@@ -1,0 +1,184 @@
+﻿@model BIMS.Models.BookingDetail
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>BookingDetail</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.BookingNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BookingNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NameOfClient)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NameOfClient)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nationality)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nationality)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Detonation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Detonation)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HotelName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HotelName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CheckIn)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CheckIn)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CheckOut)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CheckOut)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TotalNights)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TotalNights)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NetPrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NetPrice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SellingRate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SellingRate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Markup)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Markup)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NumberOfPax)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumberOfPax)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Contact)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Contact)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Remarks)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Remarks)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SpecialOcassion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SpecialOcassion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Supplier)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Supplier)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TotalNumberOfBookings)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TotalNumberOfBookings)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TotalSelling)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TotalSelling)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TotalNumberOfNights)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TotalNumberOfNights)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TotalNetRate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TotalNetRate)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

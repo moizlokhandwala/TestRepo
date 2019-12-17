@@ -1,0 +1,147 @@
+﻿@model IEnumerable<BIMS.Models.BookingDetail>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.BookingNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NameOfClient)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Nationality)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Detonation)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HotelName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CheckIn)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CheckOut)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TotalNights)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NetPrice)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SellingRate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Markup)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NumberOfPax)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Contact)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Remarks)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SpecialOcassion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Supplier)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TotalNumberOfBookings)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TotalSelling)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TotalNumberOfNights)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TotalNetRate)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.BookingNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NameOfClient)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nationality)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Detonation)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HotelName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CheckIn)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CheckOut)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TotalNights)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NetPrice)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SellingRate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Markup)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NumberOfPax)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Contact)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Remarks)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SpecialOcassion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Supplier)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TotalNumberOfBookings)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TotalSelling)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TotalNumberOfNights)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TotalNetRate)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>

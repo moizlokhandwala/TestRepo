@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BIMSModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="BookingDetail">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="BookingNumber" Type="Int32" Nullable="false" />
+    <Property Name="NameOfClient" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Nationality" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Detonation" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="HotelName" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CheckIn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CheckOut" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="TotalNights" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="NetPrice" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="SellingRate" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="Markup" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="NumberOfPax" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Contact" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Remarks" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="SpecialOcassion" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Supplier" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TotalNumberOfBookings" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="TotalSelling" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="TotalNumberOfNights" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="TotalNetRate" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="BIMSEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="BookingDetails" EntityType="Self.BookingDetail" />
+  </EntityContainer>
+</Schema>

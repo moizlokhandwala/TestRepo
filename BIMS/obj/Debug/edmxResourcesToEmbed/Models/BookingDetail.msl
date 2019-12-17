@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BIMSModelStoreContainer" CdmEntityContainer="BIMSEntities1">
+    <EntitySetMapping Name="BookingDetails">
+      <EntityTypeMapping TypeName="BIMSModel.BookingDetail">
+        <MappingFragment StoreEntitySet="BookingDetails">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="BookingNumber" ColumnName="BookingNumber" />
+          <ScalarProperty Name="NameOfClient" ColumnName="NameOfClient" />
+          <ScalarProperty Name="Nationality" ColumnName="Nationality" />
+          <ScalarProperty Name="Detonation" ColumnName="Detonation" />
+          <ScalarProperty Name="HotelName" ColumnName="HotelName" />
+          <ScalarProperty Name="CheckIn" ColumnName="CheckIn" />
+          <ScalarProperty Name="CheckOut" ColumnName="CheckOut" />
+          <ScalarProperty Name="TotalNights" ColumnName="TotalNights" />
+          <ScalarProperty Name="NetPrice" ColumnName="NetPrice" />
+          <ScalarProperty Name="SellingRate" ColumnName="SellingRate" />
+          <ScalarProperty Name="Markup" ColumnName="Markup" />
+          <ScalarProperty Name="NumberOfPax" ColumnName="NumberOfPax" />
+          <ScalarProperty Name="Contact" ColumnName="Contact" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="SpecialOcassion" ColumnName="SpecialOcassion" />
+          <ScalarProperty Name="Supplier" ColumnName="Supplier" />
+          <ScalarProperty Name="TotalNumberOfBookings" ColumnName="TotalNumberOfBookings" />
+          <ScalarProperty Name="TotalSelling" ColumnName="TotalSelling" />
+          <ScalarProperty Name="TotalNumberOfNights" ColumnName="TotalNumberOfNights" />
+          <ScalarProperty Name="TotalNetRate" ColumnName="TotalNetRate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
